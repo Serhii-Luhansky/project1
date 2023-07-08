@@ -52,7 +52,7 @@ button {
 
 /* основной шрифт страницы */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
@@ -100,7 +100,7 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.56px;
   text-transform: uppercase;
   max-width: 94px;
@@ -110,7 +110,7 @@ body {
 
 .footer-image {
 
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-bottom: 8px;
 
 }
@@ -127,7 +127,7 @@ body {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.56px;
 
 }
@@ -184,8 +184,11 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.28px;
+  width: 135px;
+  margin: 0 auto;
+  height: 54px;
 }
 
 .footer-adress-list {
@@ -196,6 +199,11 @@ body {
   justify-content: center;
 }
 
+.container-left {
+  display: flex;
+  flex-direction: column;
+}
+
 /* .footer-adress {
   display: flex;
   text-align: center;
@@ -203,25 +211,31 @@ body {
   justify-content: center;
 } */
 
-.footer-contact-adress {
-  width: 135px;
-  margin: 0 auto;
-  height: 54px;
-}
+
 
 
 @media screen and (min-width: 375px) {
   .container {
-    min-width: 375px;
+    width: 375px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
 }
 
 @media screen and (min-width: 768px) {
   .container {
+    padding-left: 0px;
+    padding-right: 0px;
     max-width: 768px;
+
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer {
+    display: flex;
+    padding: 80px 0px;
   }
 
   .container-footer {
@@ -229,8 +243,53 @@ body {
 
   }
 
+  .footer-contact-wrapper {
+    text-align: left;
+  }
 
+  .footer-contact-adress {
+    width: 135px;
+    text-align: left;
+    height: 54px;
+  }
+
+  .menu-social-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .menu-social-list {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-contact-tel {
+    color: #141414;
+
+    font-size: 18px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+    text-transform: uppercase;
+  }
+
+  .footer-contact-adress {
+
+
+    font-family: DM Sans;
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.36px;
+    width: 173px;
+    height: 72px;
+    text-align: left;
+
+  }
 }
+
 
 
 
